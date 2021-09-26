@@ -9,6 +9,19 @@
   ],
   "creatorBuild" : "34127",
   "files" : {
+    "\/assets\/hero.jpg" : {
+      "ft" : 16384,
+      "iS" : 1648455,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/hero.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -39,6 +52,14 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
+    },
+    "\/design\/Motion Graphics.fig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/design\/Motion Graphics.fig",
+      "oF" : 0
     },
     "\/dev\/global\/head.kit" : {
       "cB" : 0,
