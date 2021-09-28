@@ -15,6 +15,10 @@ ul {
     }
 }
 
+a{
+    text-decoration: none;
+}
+
 .container-grid {
     display: grid;
     grid-template-areas: ". grid-content .";
