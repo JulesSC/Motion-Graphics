@@ -22,6 +22,45 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/assets\/sun.png" : {
+      "ft" : 32768,
+      "iS" : 11354,
+      "oA" : 0,
+      "oAP" : "\/assets\/sun.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/surf locos black logo.png" : {
+      "ft" : 32768,
+      "iS" : 100252,
+      "oA" : 0,
+      "oAP" : "\/assets\/surf locos black logo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/surf locos white logo.png" : {
+      "ft" : 32768,
+      "iS" : 92288,
+      "oA" : 0,
+      "oAP" : "\/assets\/surf locos white logo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,
