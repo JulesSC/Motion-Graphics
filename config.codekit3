@@ -9,58 +9,6 @@
   ],
   "creatorBuild" : "34127",
   "files" : {
-    "\/assets\/hero.jpg" : {
-      "ft" : 16384,
-      "iS" : 1648455,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/assets\/hero.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/assets\/sun.png" : {
-      "ft" : 32768,
-      "iS" : 11354,
-      "oA" : 0,
-      "oAP" : "\/assets\/sun.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/assets\/surf locos black logo.png" : {
-      "ft" : 32768,
-      "iS" : 100252,
-      "oA" : 0,
-      "oAP" : "\/assets\/surf locos black logo.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/assets\/surf locos white logo.png" : {
-      "ft" : 32768,
-      "iS" : 92288,
-      "oA" : 0,
-      "oAP" : "\/assets\/surf locos white logo.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -100,12 +48,36 @@
       "oAP" : "\/design\/Motion Graphics.fig",
       "oF" : 0
     },
+    "\/dev\/content\/content.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/content.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/hero.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/hero.html",
+      "oF" : 0
+    },
     "\/dev\/global\/head.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/global\/head.html",
+      "oF" : 0
+    },
+    "\/dev\/global\/header.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/global\/header.html",
       "oF" : 0
     },
     "\/dev\/global\/scripts.kit" : {
@@ -288,6 +260,58 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/img\/header\/black.png" : {
+      "ft" : 32768,
+      "iS" : 100252,
+      "oA" : 0,
+      "oAP" : "\/img\/header\/black.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/header\/white.png" : {
+      "ft" : 32768,
+      "iS" : 92288,
+      "oA" : 0,
+      "oAP" : "\/img\/header\/white.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/hero\/hero.jpg" : {
+      "ft" : 16384,
+      "iS" : 1648455,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/hero\/hero.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/hero\/sun.png" : {
+      "ft" : 32768,
+      "iS" : 11354,
+      "oA" : 0,
+      "oAP" : "\/img\/hero\/sun.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/package-lock.json" : {
       "ft" : 524288,
