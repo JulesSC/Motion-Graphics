@@ -92,12 +92,12 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/design\/Motion Graphics.fig" : {
+    "\/design\/.Motion Graphics.fig.icloud" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/design\/Motion Graphics.fig",
+      "oAP" : "\/design\/.Motion Graphics.fig.icloud",
       "oF" : 0
     },
     "\/dev\/content\/content.kit" : {
@@ -312,6 +312,20 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/gsap-bonus.tgz" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gsap-bonus.tgz",
+      "oF" : 0
+    },
+    "\/node_modules" : {
+      "ft" : 65536,
+      "oA" : 2,
+      "oAP" : "\/node_modules",
+      "oF" : 0
     },
     "\/package-lock.json" : {
       "ft" : 524288,
