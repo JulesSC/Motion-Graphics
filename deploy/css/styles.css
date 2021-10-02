@@ -358,10 +358,6 @@ ul li {
   list-style: none;
 }
 
-h1 {
-  color: blue;
-}
-
 /* =============
     Typography
 ============= */
@@ -401,6 +397,14 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  width: 100%;
+  background: rgba(47, 63, 61, 0.35);
+}
+header > div {
+  display: grid;
+}
+
 /* =============
     Footer
 ============= */
