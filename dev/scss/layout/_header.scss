@@ -3,10 +3,39 @@
 ============= */
 header{
     width: 100%;
-    background: rgba(47, 63, 61, 0.35);
+    height: 112px;
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
 
     >div{
-        display: grid;
-        
+        padding: 45px 223px;
+        margin: 15px 15px 0px 15px;
+        background-color: rgba(47, 63, 61, 0.35);
+    }
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: Futura;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+
+        li{
+            a:link,
+            a:visited {
+                color: white;
+                transition: 0.25s;
+            }
+
+            a:hover,
+            a:active {
+                color: black;
+            }
+        }
     }
 }
