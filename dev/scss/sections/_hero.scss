@@ -1,15 +1,39 @@
+// #hero {
+//     #hero-image{
+//         background-image: url("../img/hero/hero.jpg");
+//         height: 930px;
+//         // width: 100%;
+//         background-size: cover;
+//         background-position: center;
+//     }
+
+//     #hero-body {
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+
+//         section{
+//             text-align: center;
+//         }
+//     }
+// }
+
 #hero {
     background-image: url("../img/hero/hero.jpg");
-    height: 931px;
+    height: 930px;
     width: 100%;
+    border-radius: 70px;
     background-size: cover;
     background-position: center;
-    background: #F2EBE1;
-    padding: 15px;
+    color: $white;
+    margin: -112px 15px 0px 15px;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    // #hero-body {
-    // }
+    #hero-body{
+        h1{
+            text-align: center;
+        }
+    }
 }
