@@ -358,6 +358,11 @@ ul li {
   list-style: none;
 }
 
+body {
+  background-color: #F2EBE1;
+  padding: 15px;
+}
+
 /* =============
     Typography
 ============= */
@@ -410,7 +415,6 @@ header {
 }
 header > div {
   padding: 45px 223px;
-  margin: 15px 15px 0px 15px;
   background-color: rgba(47, 63, 61, 0.35);
   border-radius: 75px 75px 0px 0px;
 }
@@ -445,11 +449,20 @@ header ul li a:active {
   border-radius: 70px;
   background-size: cover;
   background-position: center;
-  color: #fff;
-  margin: -112px 15px 0px 15px;
+  margin-top: -112px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+#hero #hero-body {
+  color: #fff;
+  font-family: Jost;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+}
+#hero #hero-body section {
+  margin: 0px 678px;
 }
 #hero #hero-body h1 {
   text-align: center;
@@ -467,4 +480,9 @@ header ul li a:active {
   height: 90px;
   text-align: center;
   color: #B22D00;
+  font-family: Jost;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
 }

@@ -25,13 +25,22 @@
     border-radius: 70px;
     background-size: cover;
     background-position: center;
-    color: $white;
-    margin: -112px 15px 0px 15px;
+    margin-top: -112px;
     display: flex;
     align-items: center;
     justify-content: center;
 
     #hero-body{
+        color: $white;
+        font-family: Jost;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        
+        section{
+            margin: 0px 678px;
+        }
+        
         h1{
             text-align: center;
         }
