@@ -35,14 +35,16 @@
         font-family: Jost;
         font-style: normal;
         font-weight: normal;
-        font-size: 36px;
+        // font-size: 36px;
+        font-size: rem-calc(18px);
         
         section{
             margin: 0px 678px;
         }
-        
+
         h1{
             text-align: center;
+            margin: 28px 0px;
         }
     }
 }
