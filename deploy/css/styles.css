@@ -412,6 +412,7 @@ header {
   margin: 0px;
   padding: 0px;
   background-color: transparent;
+  z-index: 1000;
 }
 header > div {
   padding: 45px 223px;
