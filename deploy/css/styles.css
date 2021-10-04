@@ -412,12 +412,13 @@ header {
   margin: 0px;
   padding: 0px;
   background-color: transparent;
+  position: relative;
   z-index: 1000;
 }
 header > div {
-  padding: 45px 223px;
-  background-color: rgba(47, 63, 61, 0.35);
-  border-radius: 75px 75px 0px 0px;
+  padding: 10px 223px;
+  background-color: white;
+  border-radius: 20px 20px 0px 0px;
 }
 header ul {
   display: flex;
@@ -432,7 +433,7 @@ header ul {
 }
 header ul li a:link,
 header ul li a:visited {
-  color: white;
+  color: #B22D00;
   transition: 0.25s;
 }
 header ul li a:hover,
@@ -447,7 +448,7 @@ header ul li a:active {
   background-image: url("../img/hero/hero.jpg");
   height: 930px;
   width: 100%;
-  border-radius: 70px;
+  border-radius: 20px;
   background-size: cover;
   background-position: center;
   margin-top: -112px;
@@ -463,7 +464,7 @@ header ul li a:active {
   font-size: 1.125rem;
 }
 #hero #hero-body section {
-  margin: 0px 678px;
+  margin: 0px 155px;
 }
 #hero #hero-body h1 {
   text-align: center;

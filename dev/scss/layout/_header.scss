@@ -7,12 +7,13 @@ header{
     margin: 0px;
     padding: 0px;
     background-color: transparent;
+    position: relative;
     z-index: 1000;
 
     >div{
-        padding: 45px 223px;
-        background-color: rgba(47, 63, 61, 0.35);
-        border-radius: 75px 75px 0px 0px;
+        padding: 10px 223px;
+        background-color: white;
+        border-radius: 20px 20px 0px 0px;
     }
 
     ul{
@@ -29,7 +30,7 @@ header{
         li{
             a:link,
             a:visited {
-                color: white;
+                color: #B22D00;
                 transition: 0.25s;
             }
 
