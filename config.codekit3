@@ -34,6 +34,32 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/header\/red.png" : {
+      "ft" : 32768,
+      "iS" : 21420,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/header\/red.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/header\/surf_locos.jpeg" : {
+      "ft" : 16384,
+      "iS" : 134194,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/header\/surf_locos.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/header\/white.png" : {
       "ft" : 32768,
       "iS" : 92288,
