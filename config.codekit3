@@ -142,6 +142,16 @@
       "oAP" : "\/design\/Loading\/.Loading Prototype.fig.icloud",
       "oF" : 0
     },
+    "\/design\/Loading\/preloader.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/design\/Loading\/preloader.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/dev\/content\/content.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -156,6 +166,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/hero.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/preloader.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/preloader.html",
       "oF" : 0
     },
     "\/dev\/global\/head.kit" : {
