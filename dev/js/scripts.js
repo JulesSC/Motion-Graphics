@@ -1,4 +1,7 @@
 import { gsap } from "gsap";
+import { GSDevTools } from "gsap/GSDevTools";
+
+gsap.registerPlugin(GSDevTools);
 
 const mainTL = gsap.timeline();
 
@@ -31,6 +34,8 @@ function flipWaveLower(){
 mainTL.add(morphEllipseLeft(), "morph")
 .add(morphEllipseRight(), "morph")
 .add(flipWaveLower()), "morph";
+
+GSDevTools.create();
 
 /* =============
     Hero
