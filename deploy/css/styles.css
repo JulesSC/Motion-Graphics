@@ -444,6 +444,42 @@ header ul li a:active {
 /* =============
     Footer
 ============= */
+#preloader {
+  display: grid;
+  grid-template-columns: auto 90vw auto;
+  grid-template-areas: ". preloader .";
+  background-color: #F2EBE1;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: 5000;
+}
+@media (min-width: 768px) {
+  #preloader {
+    grid-template-columns: auto 80vw auto;
+  }
+}
+@media (min-width: 992px) {
+  #preloader {
+    grid-template-columns: auto 70vw auto;
+  }
+}
+@media (min-width: 1200px) {
+  #preloader {
+    grid-template-columns: auto 50vw auto;
+  }
+}
+#preloader > div {
+  grid-area: preloader;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#preloader > div svg {
+  width: 80%;
+}
+
 #hero {
   background-image: url("../img/hero/hero.jpg");
   height: 930px;
