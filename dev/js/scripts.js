@@ -9,31 +9,40 @@ const mainTL = gsap.timeline();
 
 function morphEllipseLeft(){
     const tl = gsap.timeline();
-    tl.to("#Left-Ellipse", {duration: 2, y:"-=500"});
+    tl.to("#Left-Ellipse", {duration: 2, ease: "power4.out", y:"-=500"});
     return tl;
 }
 
 function morphEllipseRight(){
     const tl = gsap.timeline();
-    tl.to("#Right-Ellipse", {duration: 2, y:"+=500"});
+    tl.to("#Right-Ellipse", {duration: 2, ease: "power4.out", y:"+=500"});
     return tl;
 }
 
 function flipWaveLower(){
     const tl = gsap.timeline();
-    tl.to("#Group-1, #Group-3, #Group-5", {duration: 2, scaleY:-1});
+    tl.to(".lower", {duration: 2, ease: "power4.out", scaleY:-1, stagger: 0.25}, "morph");
+    tl.to("#Line-1", {duration: 0.75, ease: "power4.out", scaleY:0.60, y:"-=60"}, "morph");
+    return tl;
+}
+
+function line(){
+    const tl = gsap.timeline();
+    tl.to(".line", {duration: 2, ease: "power4.out", scaleY:-1, stagger: 0.25}, "morph");
     return tl;
 }
 
 // function flipWaveUpper(){
 //     const tl = gsap.timeline();
-//     tl.from("#Group-2, #Group-4, #Group-6", {duration: 2, scaleY:-1});
+//     tl.to(".upper", {duration: 2, ease: "power4.out", scaleY:-1, stagger: 0.25});
 //     return tl;
 // }
 
-mainTL.add(morphEllipseLeft(), "morph")
+mainTL.add(flipWaveLower(), "morph")
+.add(morphEllipseLeft(), "morph")
 .add(morphEllipseRight(), "morph")
-.add(flipWaveLower()), "morph";
+.add(line(), "morph");
+// .add(flipWaveUpper(), "morph");
 
 GSDevTools.create();
 
