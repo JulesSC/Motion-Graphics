@@ -31,10 +31,23 @@ function lineOne(){
     tl.to("#Line-1", {duration: 1, ease: "power4.out", scaleY:0.6, transformOrigin: "center bottom"});
     return tl;
 }
+
 function lineSeven(){
     const tl = gsap.timeline();
     tl.to("#Line-7", {duration: 1, ease: "power4.out", scaleY:0.25, transformOrigin: "center bottom", delay:0.65});
     tl.to("#Line-7", {duration: 1, ease: "power4.out", scaleY:0.6, transformOrigin: "center top"});
+    return tl;
+}
+
+function lineFour(){
+    const tl = gsap.timeline();
+    tl.to("#Line-4", {duration: 1, ease: "power4.out", scaleY:1.25, transformOrigin: "center center", delay:0.25});
+    return tl;
+}
+
+function lineInterior(){
+    const tl = gsap.timeline();
+    tl.to(".lineInterior", {duration: 3, ease: "power4.out", scaleY:-1, stagger: 0.15, transformOrigin: "center center"});
     return tl;
 }
 
@@ -46,25 +59,41 @@ function flipWaveUpper(){
 
 function ellipseLeftEnd(){
     const tl = gsap.timeline();
-    tl.to("#Left-Ellipse", {duration: 2, ease: "power4.out", y:"+=500", delay: 0.15});
+    tl.to("#Left-Ellipse", {duration: 2, ease: "power4.out", y:"+=500", alpha:0});
     return tl;
 }
 
 function ellipseRightEnd(){
     const tl = gsap.timeline();
-    tl.to("#Right-Ellipse", {duration: 2, ease: "power4.out", y:"-=500", delay: 0.5});
+    tl.to("#Right-Ellipse", {duration: 2, ease: "power4.out", y:"-=500", alpha:0});
     return tl;
 }
 
 function groupTwo(){
     const tl = gsap.timeline();
-    tl.to(".lower", {duration: 2, ease: "power4.out", y:"+=65", delay: 0.15});
+    tl.to("#Group-1, #Group-3", {duration: 2, ease: "power4.out", y:"+=130", delay: 0.15});
     return tl;
 }
 
 function groupFive(){
     const tl = gsap.timeline();
-    tl.to(".upper", {duration: 2, ease: "power4.out", y:"-=65", delay: 0.15});
+    tl.to("#Group-4, #Group-6", {duration: 2, ease: "power4.out", y:"-=130", delay: 0.15});
+    return tl;
+}
+
+function lines(){
+    const tl = gsap.timeline();
+    tl.to(".lineCenter", {duration: 4, ease: "power4.out", scaleY:0.25, transformOrigin: "center center"}, "go" );
+    tl.to("#Line-2, #Line-3", {duration: 2, ease: "power4.out", scaleY:-0.25, transformOrigin: "center top"}, "go");
+    tl.to("#Line-5, #Line-6", {duration: 2, ease: "power4.out", scaleY:-0.25, transformOrigin: "center bottom"}, "go");
+    tl.to("#Line-1", {duration: 2, ease: "power4.out", y:"+=130", transformOrigin: "center bottom"}, "go");
+    tl.to("#Line-7", {duration: 2, ease: "power4.out", y:"-=130", transformOrigin: "center top"}, "go");
+    return tl;
+}
+
+function final(){
+    const tl = gsap.timeline();
+    tl.to("#Final", {duration: 2, ease: "power4.out", scaleY:0, scaleX:25, transformOrigin: "center center"}, "go" );
     return tl;
 }
 
@@ -80,10 +109,14 @@ mainTL.add(flipWaveLower(), "morph")
 .add(morphEllipseRight(), "morph")
 .add(lineOne(), "morph")
 .add(lineSeven(), "morph")
+.add(lineFour(), "morph")
+.add(lineInterior(), "morph")
 .add(ellipseLeftEnd(), "madeUp")
 .add(ellipseRightEnd(), "madeUp")
 .add(groupTwo(), "madeUp")
-.add(groupFive(), "madeUp");
+.add(groupFive(), "madeUp")
+.add(lines(), "madeUp")
+.add(final());
 
 GSDevTools.create();
 
