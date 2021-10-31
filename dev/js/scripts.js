@@ -9,40 +9,81 @@ const mainTL = gsap.timeline();
 
 function morphEllipseLeft(){
     const tl = gsap.timeline();
-    tl.to("#Left-Ellipse", {duration: 2, ease: "power4.out", y:"-=500"});
+    tl.to("#Left-Ellipse", {duration: 2, ease: "power4.out", y:"-=500", delay: 0.15});
     return tl;
 }
 
 function morphEllipseRight(){
     const tl = gsap.timeline();
-    tl.to("#Right-Ellipse", {duration: 2, ease: "power4.out", y:"+=500"});
+    tl.to("#Right-Ellipse", {duration: 2, ease: "power4.out", y:"+=500", delay: 0.5});
     return tl;
 }
 
 function flipWaveLower(){
     const tl = gsap.timeline();
-    tl.to(".lower", {duration: 2, ease: "power4.out", scaleY:-1, stagger: 0.25}, "morph");
-    tl.to("#Line-1", {duration: 0.75, ease: "power4.out", scaleY:0.60, y:"-=60"}, "morph");
+    tl.to(".lower", {duration: 2, ease: "power4.out", scaleY:-1, stagger: 0.25});
     return tl;
 }
 
-function line(){
+function lineOne(){
     const tl = gsap.timeline();
-    tl.to(".line", {duration: 2, ease: "power4.out", scaleY:-1, stagger: 0.25}, "morph");
+    tl.to("#Line-1", {duration: 1, ease: "power4.out", scaleY:0.25});
+    tl.to("#Line-1", {duration: 1, ease: "power4.out", scaleY:0.6, transformOrigin: "center bottom"});
+    return tl;
+}
+function lineSeven(){
+    const tl = gsap.timeline();
+    tl.to("#Line-7", {duration: 1, ease: "power4.out", scaleY:0.25, transformOrigin: "center bottom", delay:0.65});
+    tl.to("#Line-7", {duration: 1, ease: "power4.out", scaleY:0.6, transformOrigin: "center top"});
     return tl;
 }
 
-// function flipWaveUpper(){
+function flipWaveUpper(){
+    const tl = gsap.timeline();
+    tl.to(".upper", {duration: 2, ease: "power4.out", scaleY:-1, transformOrigin: "center bottom", delay: 0.15, stagger: 0.25});
+    return tl;
+}
+
+function ellipseLeftEnd(){
+    const tl = gsap.timeline();
+    tl.to("#Left-Ellipse", {duration: 2, ease: "power4.out", y:"+=500", delay: 0.15});
+    return tl;
+}
+
+function ellipseRightEnd(){
+    const tl = gsap.timeline();
+    tl.to("#Right-Ellipse", {duration: 2, ease: "power4.out", y:"-=500", delay: 0.5});
+    return tl;
+}
+
+function groupTwo(){
+    const tl = gsap.timeline();
+    tl.to(".lower", {duration: 2, ease: "power4.out", y:"+=65", delay: 0.15});
+    return tl;
+}
+
+function groupFive(){
+    const tl = gsap.timeline();
+    tl.to(".upper", {duration: 2, ease: "power4.out", y:"-=65", delay: 0.15});
+    return tl;
+}
+
+// function line(){
 //     const tl = gsap.timeline();
-//     tl.to(".upper", {duration: 2, ease: "power4.out", scaleY:-1, stagger: 0.25});
+//     tl.to(".line", {duration: 2, ease: "power4.out", scaleY:-1, stagger: 0.25}, "morph");
 //     return tl;
 // }
 
 mainTL.add(flipWaveLower(), "morph")
 .add(morphEllipseLeft(), "morph")
+.add(flipWaveUpper(), "morph")
 .add(morphEllipseRight(), "morph")
-.add(line(), "morph");
-// .add(flipWaveUpper(), "morph");
+.add(lineOne(), "morph")
+.add(lineSeven(), "morph")
+.add(ellipseLeftEnd(), "madeUp")
+.add(ellipseRightEnd(), "madeUp")
+.add(groupTwo(), "madeUp")
+.add(groupFive(), "madeUp");
 
 GSDevTools.create();
 
