@@ -30,6 +30,10 @@
 
         svg{
             width: 80%;
+
+            #Right-Surfboard, #Left-Surfboard, #Base-Line, #Step-Two{
+                visibility: hidden;
+            }
         }
     }
 }

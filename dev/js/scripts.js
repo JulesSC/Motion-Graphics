@@ -1,15 +1,16 @@
 import { gsap } from "gsap";
 import { GSDevTools } from "gsap/GSDevTools";
+import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 
 gsap.registerPlugin(GSDevTools);
+gsap.registerPlugin(MorphSVGPlugin);
 
 const mainTL = gsap.timeline();
-
-// mainTL.to("#Left-Ellipse", {duration: 1, alpha: 0, scale:2});
 
 function morphEllipseLeft(){
     const tl = gsap.timeline();
     tl.to("#Left-Ellipse", {duration: 2, ease: "power4.out", y:"-=500", delay: 0.15});
+    // tl.to("#Left-Ellipse", {duration: 2, morphSVG:"#Left-Surfboard"}, "+=1")
     return tl;
 }
 
@@ -93,7 +94,7 @@ function lines(){
 
 function final(){
     const tl = gsap.timeline();
-    tl.to("#Final", {duration: 2, ease: "power4.out", scaleY:0, scaleX:25, transformOrigin: "center center"}, "go" );
+    tl.to("#Final", {duration: 2, ease: "power4.out", scaleY:0, transformOrigin: "center center"}, "go" );
     return tl;
 }
 

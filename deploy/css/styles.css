@@ -483,6 +483,9 @@ header ul li a:active {
 #preloader > div svg {
   width: 80%;
 }
+#preloader > div svg #Right-Surfboard, #preloader > div svg #Left-Surfboard, #preloader > div svg #Base-Line, #preloader > div svg #Step-Two {
+  visibility: hidden;
+}
 
 #hero {
   background-image: url("../img/hero/hero.jpg");
