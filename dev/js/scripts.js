@@ -7,6 +7,27 @@ gsap.registerPlugin(MorphSVGPlugin);
 
 const mainTL = gsap.timeline();
 
+function expandBase(){
+    const tl = gsap.timeline();
+    tl.from("#Base-Line", {duration: 2, ease: "power4.out", scaleX:0, transformOrigin: "center center"});
+    return tl;
+}
+
+function stepTwo(){
+    const tl = gsap.timeline();
+    tl.from("#Step-Two", {duration: 2, ease: "power4.out", scaleY:0, transformOrigin: "center center"});
+    return tl;
+}
+
+function dropG(){
+    const tl = gsap.timeline();
+    tl.from(".upper", {duration: 2, ease: "power4.out", scaleY:0, transformOrigin: "top center"}, "try");
+    tl.from(".lower", {duration: 2, ease: "power4.out", scaleY:0, transformOrigin: "bottom center"}, "try");
+    tl.from("#Left-Ellipse", {duration: 1.5, ease: "power4.out", y:"-=300", delay: .5, alpha:0}, "try");
+    tl.from("#Right-Ellipse", {duration: 1.5, ease: "power4.out", y:"+=300", delay: .5, alpha:0}, "try");
+    return tl;
+}
+
 function morphEllipseLeft(){
     const tl = gsap.timeline();
     tl.to("#Left-Ellipse", {duration: 2, ease: "power4.out", y:"-=500", delay: 0.15});
@@ -98,13 +119,10 @@ function final(){
     return tl;
 }
 
-// function line(){
-//     const tl = gsap.timeline();
-//     tl.to(".line", {duration: 2, ease: "power4.out", scaleY:-1, stagger: 0.25}, "morph");
-//     return tl;
-// }
-
-mainTL.add(flipWaveLower(), "morph")
+mainTL.add(expandBase())
+.add(stepTwo())
+.add(dropG())
+.add(flipWaveLower(), "morph")
 .add(morphEllipseLeft(), "morph")
 .add(flipWaveUpper(), "morph")
 .add(morphEllipseRight(), "morph")
@@ -120,6 +138,7 @@ mainTL.add(flipWaveLower(), "morph")
 .add(final());
 
 GSDevTools.create();
+MorphSVGPlugin.create();
 
 /* =============
     Hero
