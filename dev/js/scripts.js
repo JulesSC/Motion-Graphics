@@ -9,35 +9,39 @@ const mainTL = gsap.timeline();
 
 function expandBase(){
     const tl = gsap.timeline();
-    tl.from("#Base-Line", {duration: 2, ease: "power4.out", scaleX:0, transformOrigin: "center center"});
+    tl.from("#Base-Line", {duration: 1, ease: "back.out(1.7)", scaleX:0, transformOrigin: "center center", autoAlpha:0});
+    tl.from("#Base-Line", {duration: 0.25, alpha:0});
     return tl;
 }
 
 function stepTwo(){
     const tl = gsap.timeline();
-    tl.from("#Step-Two", {duration: 2, ease: "power4.out", scaleY:0, transformOrigin: "center center"});
+    tl.from("#Step-Two", {duration: .01, autoAlpha:0});
+    tl.from("#Step-Two", {duration: 1, ease: "power4.out", scaleY:0, transformOrigin: "center center"});
+    tl.from("#Step-Two", {duration: .1, alpha:0});
     return tl;
 }
 
 function dropG(){
     const tl = gsap.timeline();
-    tl.from(".upper", {duration: 2, ease: "power4.out", scaleY:0, transformOrigin: "top center"}, "try");
-    tl.from(".lower", {duration: 2, ease: "power4.out", scaleY:0, transformOrigin: "bottom center"}, "try");
-    tl.from("#Left-Ellipse", {duration: 1.5, ease: "power4.out", y:"-=300", delay: .5, alpha:0}, "try");
-    tl.from("#Right-Ellipse", {duration: 1.5, ease: "power4.out", y:"+=300", delay: .5, alpha:0}, "try");
+    tl.from("#Final", {duration: .1, autoAlpha:0});
+    tl.from(".upper", {duration: 1, ease: "power4.out", scaleY:0, transformOrigin: "top center", autoAlpha:0}, "try");
+    tl.from(".lower", {duration: 1, ease: "power4.out", scaleY:0, transformOrigin: "bottom center", autoAlpha:0}, "try");
+    tl.from("#Left-Ellipse", {duration: 1.5, ease: "back.out(1.7)", y:"-=300", delay: .5, alpha:0}, "try");
+    tl.from("#Right-Ellipse", {duration: 1.5, ease: "back.out(1.7)", y:"+=300", delay: .5, alpha:0}, "try");
     return tl;
 }
 
 function morphEllipseLeft(){
     const tl = gsap.timeline();
-    tl.to("#Left-Ellipse", {duration: 2, ease: "power4.out", y:"-=500", delay: 0.15});
+    tl.to("#Left-Ellipse", {duration: 2, ease: "back.out(1.7)", y:"-=500", delay: 0.15});
     // tl.to("#Left-Ellipse", {duration: 2, morphSVG:"#Left-Surfboard"}, "+=1")
     return tl;
 }
 
 function morphEllipseRight(){
     const tl = gsap.timeline();
-    tl.to("#Right-Ellipse", {duration: 2, ease: "power4.out", y:"+=500", delay: 0.5});
+    tl.to("#Right-Ellipse", {duration: 2, ease: "back.out(1.7)", y:"+=500", delay: 0.5});
     return tl;
 }
 
@@ -115,13 +119,13 @@ function lines(){
 
 function final(){
     const tl = gsap.timeline();
-    tl.to("#Final", {duration: 2, ease: "power4.out", scaleY:0, transformOrigin: "center center"}, "go" );
+    tl.to("#Final", {duration: 2, ease: "power4.out", scaleY:0, transformOrigin: "center center"});
     return tl;
 }
 
 mainTL.add(expandBase())
-.add(stepTwo())
-.add(dropG())
+.add(stepTwo(), "-=0.25")
+.add(dropG(), "-=.5")
 .add(flipWaveLower(), "morph")
 .add(morphEllipseLeft(), "morph")
 .add(flipWaveUpper(), "morph")
