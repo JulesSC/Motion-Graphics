@@ -18,17 +18,17 @@ function stepTwo(){
     const tl = gsap.timeline();
     tl.from("#Step-Two", {duration: .01, autoAlpha:0});
     tl.from("#Step-Two", {duration: 1, ease: "power4.out", scaleY:0, transformOrigin: "center center"});
-    tl.from("#Step-Two", {duration: .1, alpha:0});
+    tl.from("#Step-Two", {duration: .01, alpha:0});
     return tl;
 }
 
 function dropG(){
     const tl = gsap.timeline();
-    tl.from("#Final", {duration: .1, autoAlpha:0});
+    tl.from("#Final", {duration: .01, autoAlpha:0});
     tl.from(".upper", {duration: 1, ease: "power4.out", scaleY:0, transformOrigin: "top center", autoAlpha:0}, "try");
     tl.from(".lower", {duration: 1, ease: "power4.out", scaleY:0, transformOrigin: "bottom center", autoAlpha:0}, "try");
-    tl.from("#Left-Ellipse", {duration: 1.5, ease: "back.out(1.7)", y:"-=300", delay: .5, alpha:0}, "try");
-    tl.from("#Right-Ellipse", {duration: 1.5, ease: "back.out(1.7)", y:"+=300", delay: .5, alpha:0}, "try");
+    tl.from("#Left-Ellipse", {duration: 2, ease: "back.out(1.7)", y:"-=300", delay: .5, alpha:0}, "try");
+    tl.from("#Right-Ellipse", {duration: 2, ease: "back.out(1.7)", y:"+=300", delay: .5, alpha:0}, "try");
     return tl;
 }
 
@@ -97,13 +97,13 @@ function ellipseRightEnd(){
 
 function groupTwo(){
     const tl = gsap.timeline();
-    tl.to("#Group-1, #Group-3", {duration: 2, ease: "power4.out", y:"+=130", delay: 0.15});
+    tl.to("#Group-1, #Group-3", {duration: 1.5, ease: "power4.out", y:"+=130", delay: 0.15});
     return tl;
 }
 
 function groupFive(){
     const tl = gsap.timeline();
-    tl.to("#Group-4, #Group-6", {duration: 2, ease: "power4.out", y:"-=130", delay: 0.15});
+    tl.to("#Group-4, #Group-6", {duration: 1.5, ease: "power4.out", y:"-=130", delay: 0.15});
     return tl;
 }
 
@@ -125,7 +125,7 @@ function final(){
 
 mainTL.add(expandBase())
 .add(stepTwo(), "-=0.25")
-.add(dropG(), "-=.5")
+.add(dropG(), "-=0.25")
 .add(flipWaveLower(), "morph")
 .add(morphEllipseLeft(), "morph")
 .add(flipWaveUpper(), "morph")
