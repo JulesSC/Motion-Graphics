@@ -124,7 +124,10 @@ function lines(){
 
 function final(){
     const tl = gsap.timeline();
-    tl.to("#Final", {duration: 2, ease: "power4.out", scaleY:0, transformOrigin: "center center"});
+    tl.to("#Final", {duration: 1, ease: "power4.out", scaleY:0, transformOrigin: "center center"});
+    // tl.from("#Base-Line", {duration: 0.25, autoAlpha:0}, "-=.25");
+    tl.to("#Base-Line", {duration: 0.25, alpha:1}, "-=.5");
+    tl.to("#Base-Line", {duration: 0.5, ease: "power4.out", scaleX:0, transformOrigin: "center center"});
     return tl;
 }
 
