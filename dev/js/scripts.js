@@ -2,8 +2,8 @@ import { gsap } from "gsap";
 import { GSDevTools } from "gsap/GSDevTools";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 
-gsap.registerPlugin(GSDevTools);
-gsap.registerPlugin(MorphSVGPlugin);
+gsap.registerPlugin(GSDevTools, MorphSVGPlugin);
+MorphSVGPlugin.convertToPath("circle, rect, ellipse, line, polygon, polyline");
 
 const mainTL = gsap.timeline();
 
@@ -34,8 +34,10 @@ function dropG(){
 
 function morphEllipseLeft(){
     const tl = gsap.timeline();
-    tl.to("#Left-Ellipse", {duration: 2, ease: "back.out(1.7)", y:"-=500", delay: 0.15});
-    // tl.to("#Left-Ellipse", {duration: 2, morphSVG:"#Left-Surfboard"}, "+=1")
+    tl.to("#Left-Ellipse", {duration: 1, ease: "back.out(1.7)", y:"-=180", delay: 0.15, morphSVG:"#Left-Surfboard-First"});
+    tl.from("#Left-Ellipse", {duration: .01, alpha:0}), "-=0.25";
+    tl.from("#Left-Ellipse-Second", {duration: .01, autoAlpha:0});
+    tl.from("#Left-Ellipse-Second", {duration: 1, ease: "back.out(1.7)", y:"+=170", morphSVG:"#Left-Surfboard-Second"});
     return tl;
 }
 
@@ -109,7 +111,7 @@ function groupFive(){
 
 function lines(){
     const tl = gsap.timeline();
-    tl.to(".lineCenter", {duration: 4, ease: "power4.out", scaleY:0.25, transformOrigin: "center center"}, "go" );
+    tl.to(".lineCenter", {duration: 2, ease: "power4.out", scaleY:0.25, transformOrigin: "center center"}, "go" );
     tl.to("#Line-2, #Line-3", {duration: 2, ease: "power4.out", scaleY:-0.25, transformOrigin: "center top"}, "go");
     tl.to("#Line-5, #Line-6", {duration: 2, ease: "power4.out", scaleY:-0.25, transformOrigin: "center bottom"}, "go");
     tl.to("#Line-1", {duration: 2, ease: "power4.out", y:"+=130", transformOrigin: "center bottom"}, "go");
@@ -142,7 +144,6 @@ mainTL.add(expandBase())
 .add(final());
 
 GSDevTools.create();
-MorphSVGPlugin.create();
 
 /* =============
     Hero
