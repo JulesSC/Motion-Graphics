@@ -35,8 +35,8 @@ function dropG(){
 function morphEllipseLeft(){
     const tl = gsap.timeline();
     tl.to("#Left-Ellipse", {duration: 1, ease: "back.out(1.7)", y:"-=180", delay: 0.15, morphSVG:"#Left-Surfboard-First"});
-    // tl.from("#Left-Ellipse", {duration: .01, alpha:0}), "-=0.25";
-    // tl.from("#Left-Ellipse-Second", {duration: .01, autoAlpha:0});
+    tl.from("#Left-Ellipse", {duration: .01, alpha:0}), "-=0.25";
+    tl.from("#Left-Ellipse-Second", {duration: .01, autoAlpha:0});
     // tl.from("#Left-Ellipse-Second", {duration: 1, ease: "back.out(1.7)", y:"-=170", morphSVG:"#Left-Surfboard-Second"});
     return tl;
 }
@@ -44,8 +44,8 @@ function morphEllipseLeft(){
 function morphEllipseRight(){
     const tl = gsap.timeline();
     tl.to("#Right-Ellipse", {duration: 1, ease: "back.out(1.7)", y:"+=180", delay: 0.5, morphSVG:"#Right-Surfboard-First"});
-    // tl.from("#Right-Ellipse", {duration: .01, alpha:0}), "-=0.25";
-    // tl.from("#Right-Ellipse-Second", {duration: .01, autoAlpha:0});
+    tl.from("#Right-Ellipse", {duration: .01, alpha:0}), "-=0.25";
+    tl.from("#Right-Ellipse-Second", {duration: .01, autoAlpha:0});
     // tl.from("#Right-Ellipse-Second", {duration: 1, ease: "back.out(1.7)", y:"+=170", morphSVG:"#Right-Surfboard-Second"});
     return tl;
 }
