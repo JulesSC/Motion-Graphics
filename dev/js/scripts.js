@@ -133,6 +133,23 @@ function final(){
     tl.to("#Final", {duration: 0.5, ease: "power4.out", scaleY:0, transformOrigin: "center center"});
     tl.to("#Base-Line", {duration: 0.15, alpha:1}, "-=.5");
     tl.to("#Base-Line", {duration: 0.25, ease: "power4.out", scaleX:0, transformOrigin: "center center"});
+    tl.to("#preloader", {duration: 0.25, alpha:0, onComplete:removePreloader});
+    return tl;
+}
+
+function removePreloader(){
+    window.scrollTo(0,0);
+    gsap.set("#preloader", {display:none});
+}
+
+function heroAnimation(){
+    const tl = gsap.timeline();
+    tl.from("#hero",{duration:1, y:"+=100"}, "madeUp");
+    tl.from("header",{duration:1, alpha:0, y:"+=100"}, "madeUp");
+    tl.from("#content",{duration:1, y:"+=100"}, "madeUp");
+    tl.from("header ul",{duration:0.5, alpha:0, y:"+=10", delay: 0.2}, "madeUP");
+    tl.from("#hero >div",{duration:0.5, alpha:0, y:"+=5", delay: 0.2}, "madeUP");
+    tl.from("#hero >div section",{duration:0.5, rotation: 180}, "madeUP");
     return tl;
 }
 
@@ -152,7 +169,8 @@ mainTL.add(expandBase())
 .add(groupTwo(), "madeUp")
 .add(groupFive(), "madeUp")
 .add(lines(), "madeUp")
-.add(final());
+.add(final())
+.add(heroAnimation());
 
 GSDevTools.create();
 
@@ -160,9 +178,4 @@ GSDevTools.create();
     Hero
 ============= */
 
-// mainTL.from("#hero",{duration:1, y:"+=100"}, "madeUp");
-// mainTL.from("header",{duration:1, alpha:0, y:"+=100"}, "madeUp");
-// mainTL.from("#content",{duration:1, y:"+=100"}, "madeUp");
-// mainTL.from("header ul",{duration:0.5, alpha:0, y:"+=10", delay: 0.2}, "madeUP");
-// mainTL.from("#hero >div",{duration:0.5, alpha:0, y:"+=5", delay: 0.2}, "madeUP");
-// mainTL.from("#hero >div section",{duration:0.5, rotation: 180}, "madeUP");
+
