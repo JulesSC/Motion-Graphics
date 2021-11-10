@@ -27,22 +27,32 @@ function dropG(){
     tl.from("#Final", {duration: .01, autoAlpha:0});
     tl.from(".upper", {duration: 1, ease: "power4.out", scaleY:0, transformOrigin: "top center", autoAlpha:0}, "try");
     tl.from(".lower", {duration: 1, ease: "power4.out", scaleY:0, transformOrigin: "bottom center", autoAlpha:0}, "try");
-    tl.from("#Left-Ellipse", {duration: 2, ease: "back.out(1.7)", y:"-=300", delay: .5}, "try");
-    tl.from("#Right-Ellipse", {duration: 2, ease: "back.out(1.7)", y:"+=300", delay: .5}, "try");
+    tl.from("#First-Left-Small, #First-Right-Small", {duration: .01, autoAlpha:0});
+    // tl.from("#First-Left-Small", {duration: 2, ease: "back.out(1.7)", y:"-=300", delay: .5, autoAlpha:0}, "try");
+    tl.to("#First-Left-Small", {duration: 2, ease: "back.out(1.7)", y:"+=25", delay: .75, morphSVG:"#Left-Ellipse"}, "trying");
+    // tl.from("#First-Left-Small", {duration: 2, ease: "back.out(1.7)", y:"-=300", delay: .5}, "try");
+    // tl.from("#First-Right-Small", {duration: 2, ease: "back.out(1.7)", y:"+=300", delay: .5, autoAlpha:0}, "try");
+    tl.to("#First-Right-Small", {duration: 2, ease: "back.out(1.7)", y:"-=25", delay: .75, morphSVG:"#Right-Ellipse"}, "trying");
+    // tl.from("#First-Right-Small", {duration: 2, ease: "back.out(1.7)", y:"+=300", delay: .5}, "try");
+    tl.to("#First-Left-Small, #First-Right-Small", {duration: .01, alpha:0});
     return tl;
 }
 
 function morphEllipseLeft(){
     const tl = gsap.timeline();
+    tl.to("#Left-Ellipse", {duration: .01, autoAlpha:1}, "-=.15");
     tl.to("#Left-Ellipse", {duration: 1, ease: "power4.out", y:"-=180", delay: 0.15, morphSVG:"#Left-Surfboard-First"});
-    tl.to("#Left-Ellipse", {duration: 1, ease: "back.out(1.7)", y:"-=180", morphSVG:"#Left-Ellipse"});
+    tl.to("#Left-Ellipse", {duration: 1, ease: "back.out(1.7)", y:"-=200", morphSVG:"#Left-Ellipse"});
+    tl.to("#Left-Ellipse", {duration: .01, alpha:0});
     return tl;
 }
 
 function morphEllipseRight(){
     const tl = gsap.timeline();
+    tl.to("#Right-Ellipse", {duration: .01, autoAlpha:1}, "-=.15");
     tl.to("#Right-Ellipse", {duration: 1, ease: "power4.out", y:"+=180", delay: 0.5, morphSVG:"#Right-Surfboard-First"});
-    tl.to("#Right-Ellipse", {duration: 1, ease: "back.out(1.7)", y:"+=180", morphSVG:"#Right-Ellipse"});
+    tl.to("#Right-Ellipse", {duration: 1, ease: "back.out(1.7)", y:"+=200", morphSVG:"#Right-Ellipse"});
+    tl.to("#Right-Ellipse", {duration: .01, alpha:0});
     return tl;
 }
 
@@ -86,13 +96,17 @@ function flipWaveUpper(){
 
 function ellipseLeftEnd(){
     const tl = gsap.timeline();
-    tl.to("#Left-Ellipse", {duration: 2, ease: "power4.out", y:"+=500", alpha:0, morphSVG:"#Left-Surfboard-Third"});
+    tl.to("#Left-Ellipse-2", {duration: .01, autoAlpha:1}, "-=.75");
+    tl.to("#Left-Ellipse-2", {duration: 2, ease: "power4.out", y:"+=180", morphSVG:"#Left-Surfboard-Third"});
+    // tl.to("#Last-Left-Ellipse", {duration: 2, ease: "power4.out", y:"+=500", alpha:0, morphSVG:"#Left-Surfboard-Third"});
     return tl;
 }
 
 function ellipseRightEnd(){
     const tl = gsap.timeline();
-    tl.to("#Right-Ellipse", {duration: 2, ease: "power4.out", y:"-=500", alpha:0, morphSVG:"#Right-Surfboard-Third"});
+    tl.to("#Right-Ellipse-2", {duration: .01, autoAlpha:1}, "-=.75");
+    tl.to("#Right-Ellipse-2", {duration: 2, ease: "power4.out", y:"-=180", morphSVG:"#Right-Surfboard-Third"});
+    // tl.to("#Last-Right-Ellipse", {duration: 2, ease: "power4.out", y:"+=500", alpha:0, morphSVG:"#Right-Surfboard-Third"});
     return tl;
 }
 
