@@ -126,107 +126,19 @@
       "oAP" : "\/design\/.Motion Graphics.fig.icloud",
       "oF" : 0
     },
-    "\/design\/Loading\/.Inspiration.png.icloud" : {
+    "\/design\/Preloader\/.Loading Prototype.fig.icloud" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/design\/Loading\/.Inspiration.png.icloud",
+      "oAP" : "\/design\/Preloader\/.Loading Prototype.fig.icloud",
       "oF" : 0
     },
-    "\/design\/Loading\/.Loading Prototype.fig.icloud" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/design\/Loading\/.Loading Prototype.fig.icloud",
-      "oF" : 0
-    },
-    "\/design\/Loading\/Base Line.svg" : {
+    "\/design\/Preloader\/Enter5.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/design\/Loading\/Base Line.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/design\/Loading\/Design.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/design\/Loading\/Design.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/design\/Loading\/Enter.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/design\/Loading\/Enter.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/design\/Loading\/Enter2.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/design\/Loading\/Enter2.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/design\/Loading\/Enter3.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/design\/Loading\/Enter3.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/design\/Loading\/Enter4.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/design\/Loading\/Enter4.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/design\/Loading\/Enter5.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/design\/Loading\/Enter5.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/design\/Loading\/preloader.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/design\/Loading\/preloader.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/design\/Loading\/Step Two.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/design\/Loading\/Step Two.svg",
+      "oAP" : "\/design\/Preloader\/Enter5.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
